@@ -1,0 +1,10 @@
+export const pilotScenarios = [
+  { name: 'Sales', context: 'Retail sales', raw: 'Customer wanted the cheapest 65-inch TV. I asked about the room, viewing distance, lighting and what they normally watched. Their room was really bright so I showed them another model that was better suited to it and explained why. They bought that TV and added delivery.', capability: 'Needs discovery' },
+  { name: 'Difficult customer', context: 'Retail sales', raw: 'A customer was upset about a delivery delay. I checked the order, contacted dispatch and explained the updated timing. I resolved the complaint without escalating it.', capability: 'Attention to detail' },
+  { name: 'Product knowledge', context: 'Retail sales', raw: 'A customer asked how the televisions differed. I explained the technical differences using the product specifications. I do not know whether they bought anything.', capability: 'Product knowledge' },
+  { name: 'Teamwork', context: 'Retail sales', raw: 'A colleague was unfamiliar with a product range. I worked with my colleague to compare product specifications and explained the warranty terms. My colleague handled the sale.', capability: 'Teamwork' },
+  { name: 'Initiative', context: 'Retail sales', raw: 'Stock labels were in the wrong places. I identified the mismatched labels and fixed their positions. I do not know whether this affected sales.', capability: 'Initiative' },
+  { name: 'Training', context: 'Retail sales', raw: 'A new employee was learning the returns process. I taught the employee how to check a receipt and record a return. I checked their next return with them.', capability: 'Training' },
+  { name: 'University', context: 'University', raw: 'Our group had four members. I organised a shared checklist and coordinated with the group to resolve conflicting deadlines. We submitted the assignment on time.', capability: 'Organisation' },
+  { name: 'Volunteering', context: 'Volunteering', raw: 'Two volunteers were absent from a community event. I organised a smaller registration team and rearranged the sign-in tables. We opened the registration desk on time.', capability: 'Organisation' },
+];
