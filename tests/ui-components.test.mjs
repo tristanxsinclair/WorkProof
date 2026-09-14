@@ -49,6 +49,15 @@ test('Privacy page discloses real scope and does not claim account deletion comp
   assert.match(html, /not deleted by WorkProof/);
 });
 
+test('homepage explains the full proof transition before asking for trust', async () => {
+  const source = await readFile(path.join(root, 'app/workproof.tsx'), 'utf8');
+  assert.match(source, /See a completed example/);
+  assert.match(source, /A claim earns its status/);
+  assert.match(source, /review makes it Reported—not independently verified/);
+  assert.match(source, /Only their confirmation of that version makes it Verified/);
+  assert.match(source, /Your full history stays private/);
+});
+
 async function readCssTree(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
   const contents = await Promise.all(
